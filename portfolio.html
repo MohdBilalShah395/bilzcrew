@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - BilzCrew Digital Agency</title>
+    <meta name="description" content="Explore BilzCrew's portfolio showcasing successful web development, digital marketing, and design projects" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Bilz<span class="accent">Crew</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="bilzcrew.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="careers.html" class="nav-link">Careers</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Portfolio</h1>
+            <p>Showcasing our latest projects and success stories</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter-section">
+        <div class="container">
+            <div class="portfolio-filter" role="toolbar" aria-label="Filter projects">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="marketing">Digital Marketing</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid-section">
+        <div class="container">
+            <div class="portfolio-grid">
+                <!-- TechStart E-commerce (web, marketing) -->
+                <div class="portfolio-item" data-category="web marketing">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop" alt="TechStart E-commerce">
+                        <div class="portfolio-overlay">
+                            <h3>TechStart E-commerce</h3>
+                            <p>Complete online store with payment integration</p>
+                            <div class="portfolio-tags">
+                                <span>Web Development</span>
+                                <span>E-commerce</span>
+                            </div>
+                            <a href="#" class="portfolio-link">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>TechStart E-commerce</h3>
+                        <p>Built a complete e-commerce platform with Stripe integration, inventory management, and mobile-responsive design. Increased sales by 300%.</p>
+                        <div class="portfolio-stats">
+                            <span><i class="fas fa-chart-line"></i> 300% Sales Increase</span>
+                            <span><i class="fas fa-clock"></i> 8 Weeks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corporate Website (web) -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=800&fit=crop" alt="Corporate Website">
+                        <div class="portfolio-overlay">
+                            <h3>Corporate Website</h3>
+                            <p>Professional site focused on conversions and brand trust</p>
+                            <div class="portfolio-tags">
+                                <span>Web Development</span>
+                                <span>Corporate</span>
+                            </div>
+                            <a href="#" class="portfolio-link">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Corporate Website</h3>
+                        <p>Designed & developed a modern corporate site with performance optimizations and CMS for easy updates.</p>
+                        <div class="portfolio-stats">
+                            <span><i class="fas fa-chart-line"></i> 120% Traffic Increase</span>
+                            <span><i class="fas fa-clock"></i> 6 Weeks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SaaS Dashboard (web, design) -->
+                <div class="portfolio-item" data-category="web design">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=1200&h=800&fit=crop" alt="SaaS Dashboard">
+                        <div class="portfolio-overlay">
+                            <h3>SaaS Dashboard</h3>
+                            <p>Admin dashboards with analytics & role-based access</p>
+                            <div class="portfolio-tags">
+                                <span>Web Development</span>
+                                <span>SaaS</span>
+                            </div>
+                            <a href="#" class="portfolio-link">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>SaaS Dashboard</h3>
+                        <p>User-centric admin dashboard with custom charts, permissions and performance tuning for heavy data.</p>
+                        <div class="portfolio-stats">
+                            <span><i class="fas fa-chart-line"></i> 40% Faster Load</span>
+                            <span><i class="fas fa-clock"></i> 10 Weeks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog & Magazine (web, marketing) -->
+                <div class="portfolio-item" data-category="web marketing">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1505765059232-36b1b70a86b9?w=1200&h=800&fit=crop" alt="Blog & Magazine">
+                        <div class="portfolio-overlay">
+                            <h3>Blog & Magazine</h3>
+                            <p>Content site optimized for SEO and readership</p>
+                            <div class="portfolio-tags">
+                                <span>Web Development</span>
+                                <span>Content</span>
+                            </div>
+                            <a href="#" class="portfolio-link">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Blog & Magazine</h3>
+                        <p>Architected editorial workflows and SEO-first templates to scale organic traffic and retention.</p>
+                        <div class="portfolio-stats">
+                            <span><i class="fas fa-chart-line"></i> 220% Organic Growth</span>
+                            <span><i class="fas fa-clock"></i> 12 Weeks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Landing Page (web, marketing) -->
+                <div class="portfolio-item" data-category="web marketing">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=1200&h=800&fit=crop" alt="Landing Page">
+                        <div class="portfolio-overlay">
+                            <h3>Landing Page</h3>
+                            <p>Conversion-focused pages for product launches</p>
+                            <div class="portfolio-tags">
+                                <span>Web Development</span>
+                                <span>Conversion</span>
+                            </div>
+                            <a href="#" class="portfolio-link">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Landing Page</h3>
+                        <p>High-converting landing pages with A/B tested CTAs and fast load times.</p>
+                        <div class="portfolio-stats">
+                            <span><i class="fas fa-chart-line"></i> 45% Conversion Lift</span>
+                            <span><i class="fas fa-clock"></i> 3 Weeks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Site (design) -->
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&h=800&fit=crop" alt="Portfolio Site">
+                        <div class="portfolio-overlay">
+                            <h3>Creative Portfolio</h3>
+                            <p>Personal portfolio site to showcase work beautifully</p>
+                            <div class="portfolio-tags">
+                                <span>UI/UX Design</span>
+                                <span>Portfolio</span>
+                            </div>
+                            <a href="#" class="portfolio-link">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Creative Portfolio</h3>
+                        <p>Pixel-perfect portfolio with animated transitions and easy project management for creators.</p>
+                        <div class="portfolio-stats">
+                            <span><i class="fas fa-chart-line"></i> +35% Engagement</span>
+                            <span><i class="fas fa-clock"></i> 4 Weeks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile App (mobile, design) -->
+                <div class="portfolio-item" data-category="mobile design">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1200&h=800&fit=crop" alt="Mobile App">
+                        <div class="portfolio-overlay">
+                            <h3>Mobile App</h3>
+                            <p>Native app with intuitive UX and fast performance</p>
+                            <div class="portfolio-tags">
+                                <span>Mobile</span>
+                                <span>App</span>
+                            </div>
+                            <a href="#" class="portfolio-link">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Mobile App</h3>
+                        <p>Built a cross-platform app with real-time features and a delightful onboarding flow.</p>
+                        <div class="portfolio-stats">
+                            <span><i class="fas fa-chart-line"></i> 50k Installs</span>
+                            <span><i class="fas fa-clock"></i> 14 Weeks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Branding Campaign (design, marketing) -->
+                <div class="portfolio-item" data-category="design marketing">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1200&h=800&fit=crop" alt="Branding Campaign">
+                        <div class="portfolio-overlay">
+                            <h3>Branding Campaign</h3>
+                            <p>Full branding & launch campaign</p>
+                            <div class="portfolio-tags">
+                                <span>Branding</span>
+                                <span>Campaign</span>
+                            </div>
+                            <a href="#" class="portfolio-link">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Branding Campaign</h3>
+                        <p>Developed new brand identity and multichannel launch campaign driving awareness and leads.</p>
+                        <div class="portfolio-stats">
+                            <span><i class="fas fa-chart-line"></i> 180% Awareness Lift</span>
+                            <span><i class="fas fa-clock"></i> 9 Weeks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies">
+        <div class="container">
+            <div class="section-white">
+                <h2 class="section-title">Detailed Case Studies</h2>
+                <p class="section-subtitle">In-depth analysis of our most successful projects</p>
+            </div>
+
+            <div class="case-studies-grid">
+                <div class="case-study-card">
+                    <div class="case-study-header">
+                        <h3>E-commerce Transformation</h3>
+                        <span class="case-study-category">Web Development + Digital Marketing</span>
+                    </div>
+                    <div class="case-study-content">
+                        <p><strong>Challenge:</strong> Client needed to migrate from outdated platform to a modern e-commerce solution while maintaining SEO rankings.</p>
+                        <p><strong>Solution:</strong> Built new Shopify store with custom theme, implemented advanced SEO strategy, and launched targeted marketing campaigns.</p>
+                        <p><strong>Results:</strong> 400% increase in sales, 250% increase in organic traffic, 50% reduction in cart abandonment.</p>
+                    </div>
+                    <div class="case-study-metrics">
+                        <div class="metric">
+                            <h4>400%</h4>
+                            <p>Sales Increase</p>
+                        </div>
+                        <div class="metric">
+                            <h4>250%</h4>
+                            <p>Traffic Growth</p>
+                        </div>
+                        <div class="metric">
+                            <h4>50%</h4>
+                            <p>Cart Reduction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bilz<span class="accent">Crew</span></h3>
+                    <p>Transforming businesses through innovative digital solutions and strategic marketing.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                        <li><a href="services.html">UI/UX Design</a></li>
+                        <li><a href="services.html">Mobile Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>hello@bilzcrew.com</p>
+                    <p>+1 (555) 123-4567</p>
+                    <p>123 Digital Street, Tech City</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BilzCrew. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        /* Additional styles for portfolio page */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: var(--spacing-3xl) 0;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: var(--font-size-4xl);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .page-header p {
+            font-size: var(--font-size-xl);
+            opacity: 0.9;
+        }
+
+        .portfolio-filter-section {
+            background: var(--background-light);
+            padding: var(--spacing-xl) 0;
+        }
+
+        .portfolio-filter {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border: 2px solid var(--border-color);
+            background: white;
+            color: var(--text-secondary);
+            border-radius: var(--radius-lg);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .portfolio-grid-section {
+            padding: var(--spacing-3xl) 0;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: var(--spacing-2xl);
+        }
+
+        .portfolio-item {
+            background: var(--background-light);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .portfolio-image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portfolio-image img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.9), rgba(109, 40, 217, 0.9));
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: var(--spacing-lg);
+            text-align: center;
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+
+        .portfolio-overlay h3 {
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .portfolio-tags {
+            display: flex;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .portfolio-tags span {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: var(--radius-md);
+            font-size: var(--font-size-sm);
+        }
+
+        .portfolio-link {
+            margin-top: var(--spacing-md);
+            padding: var(--spacing-sm) var(--spacing-md);
+            background: white;
+            color: var(--primary-color);
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .portfolio-link:hover {
+            background: var(--primary-dark);
+            color: white;
+        }
+
+        .portfolio-info {
+            padding: var(--spacing-lg);
+        }
+
+        .portfolio-info h3 {
+            font-size: var(--font-size-xl);
+            margin-bottom: var(--spacing-md);
+            color: var(--text-primary);
+        }
+
+        .portfolio-info p {
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .portfolio-stats {
+            display: flex;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+        }
+
+        .portfolio-stats span {
+            color: var(--text-secondary);
+            font-size: var(--font-size-sm);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+        }
+
+        .case-studies {
+            background: var(--background-light);
+            padding: var(--spacing-3xl) 0;
+        }
+
+        .case-studies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: var(--spacing-2xl);
+        }
+
+        .case-study-card {
+            background: var(--background-light);
+            padding: var(--spacing-2xl);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-md);
+        }
+
+        .case-study-header {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .case-study-header h3 {
+            font-size: var(--font-size-2xl);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .case-study-category {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: var(--font-size-sm);
+        }
+
+        .case-study-content {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .case-study-content p {
+            margin-bottom: var(--spacing-md);
+            color: var(--text-secondary);
+        }
+
+        .case-study-content strong {
+            color: var(--text-primary);
+        }
+
+        .case-study-metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-md);
+        }
+
+        .case-study-metrics .metric {
+            text-align: center;
+            padding: var(--spacing-md);
+            background: var(--background-dark);
+            border-radius: var(--radius-md);
+        }
+
+        .case-study-metrics .metric h4 {
+            font-size: var(--font-size-xl);
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .case-study-metrics .metric p {
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .case-studies-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .case-study-metrics {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <!-- Filter JS -->
+    <script>
+        (function () {
+            const filterBtns = Array.from(document.querySelectorAll('.filter-btn'));
+            const items = Array.from(document.querySelectorAll('.portfolio-item'));
+
+            function setActiveButton(btn) {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            }
+
+            function filter(category) {
+                items.forEach(item => {
+                    const cats = item.getAttribute('data-category') || '';
+                    if (category === 'all') {
+                        item.style.display = '';
+                    } else {
+                        // match whole words
+                        const regex = new RegExp('\\b' + category + '\\b', 'i');
+                        item.style.display = regex.test(cats) ? '' : 'none';
+                    }
+                });
+                // small scroll into view for UX
+                const grid = document.querySelector('.portfolio-grid');
+                if (grid) grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const category = this.dataset.filter;
+                    setActiveButton(this);
+                    filter(category);
+                });
+            });
+
+            // initialize (show all)
+            filter('all');
+        })();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
