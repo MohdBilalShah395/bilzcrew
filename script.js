@@ -213,11 +213,48 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // career 
     // Minimal client-side handling: prevent default and show a friendly message.
-        document.getElementById('apply-form').addEventListener('submit', function (e) {
-          e.preventDefault();
-          var resp = document.getElementById('apply-response');
-          resp.style.display = 'block';
-          resp.innerHTML = '<strong>Thanks!</strong> Your application has been received. We will review and contact you at the email you provided.';
-          this.reset();
-          resp.scrollIntoView({behavior: 'smooth'});
+    //    document.getElementById('apply-form').addEventListener('submit', function (e) {
+    //       e.preventDefault();
+    //       var resp = document.getElementById('apply-response');
+    //       resp.style.display = 'block';
+    //       resp.innerHTML = '<strong>Thanks!</strong> Your application has been received. We will review and contact you at the email you provided.';
+    //       this.reset();
+    //       resp.scrollIntoView({behavior: 'smooth'});
+    //     });  
+
+// MODIFIED: This function now uses alert() for feedback.
+async function handleFormSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const data = new FormData(form);
+    const submitButton = form.querySelector('button[type="submit"]');
+    const originalButtonText = submitButton.textContent;
+
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending...';
+
+    try {
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
         });
+
+        if (response.ok) {
+            alert("Success! Your application has been sent.");
+            form.reset();
+        } else {
+            // This handles errors from Formspree, like if the form is misconfigured.
+            alert("Oops! There was a problem submitting your form. Please try again later.");
+        }
+    } catch (error) {
+        // This handles network errors, like if the user is offline.
+        alert("Submission failed. Please check your internet connection and try again.");
+    } finally {
+        // This code runs whether the submission succeeds or fails.
+        submitButton.disabled = false;
+        submitButton.textContent = originalButtonText;
+    }
+}
